@@ -1,0 +1,71 @@
+.patrol_boat{
+    background-color: grey;
+}
+
+.destroyer{
+    background-color:darkgrey;
+}
+
+.submarine{
+    background-color: gray;
+}
+
+.battleship{
+    background-color: darkgray;
+}
+
+.carrier{
+    background-color:lightgray;
+}
+
+.ship-piece-hited{
+    background-color: darkmagenta;
+}
+
+.salvo{
+    background-color: crimson;
+}
+
+tr {
+    border-bottom: none; 
+}
+
+th{
+    text-align: center;
+}
+
+td{    
+    width: 9%;
+    border: groove;
+}
+
+td, th {
+    padding: 8px ;
+}
+
+.noBorder{
+
+    /* background-color: gray; */
+    border: none;
+
+}
+
+.hitShot {
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: red;
+}
+
+.missedShot {
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background:blue;
+}
+
+

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Ships locations!</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="dist/normalize.css" />
+  <link rel="stylesheet" href="dist/gridstack.css" />
+  <link rel="stylesheet" href="dist/gridstack-extra.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/game.css">
+
+  <nav>
+
+    <div class="nav-wrapper blue darken-3">
+
+      <div class="container">
+
+        <a href="games.html" class="brand-logo">Salvo!</a>
+
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+          <li id="playerInfo"></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    </div>
+
+  </nav>
+
+</head>
+
+<body>
+
+  <div class="container" id="tables" style="display: none; margin-top: 5%; margin-bottom: 5%;">
+
+    <section>
+
+      <div class="row">
+
+        <div class="col l6 m6">
+
+          <table>
+            <thead>
+              <th class="noBorder"></th>
+              <th class="noBorder" id="T1th_0">1</th>
+              <th class="noBorder" id="T1th_1">2</th>
+              <th class="noBorder" id="T1th_2">3</th>
+              <th class="noBorder" id="T1th_3">4</th>
+              <th class="noBorder" id="T1th_4">5</th>
+              <th class="noBorder" id="T1th_5">6</th>
+              <th class="noBorder" id="T1th_6">7</th>
+              <th class="noBorder" id="T1th_7">8</th>
+              <th class="noBorder" id="T1th_8">9</th>
+              <th class="noBorder" id="T1th_9">10</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="noBorder">A</td>
+                <td id="T1A1"></td>
+                <td id="T1A2"></td>
+                <td id="T1A3"></td>
+                <td id="T1A4"></td>
+                <td id="T1A5"></td>
+                <td id="T1A6"></td>
+                <td id="T1A7"></td>
+                <td id="T1A8"></td>
+                <td id="T1A9"></td>
+                <td id="T1A10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">B</td>
+                <td id="T1B1"></td>
+                <td id="T1B2"></td>
+                <td id="T1B3"></td>
+                <td id="T1B4"></td>
+                <td id="T1B5"></td>
+                <td id="T1B6"></td>
+                <td id="T1B7"></td>
+                <td id="T1B8"></td>
+                <td id="T1B9"></td>
+                <td id="T1B10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">C</td>
+                <td id="T1C1"></td>
+                <td id="T1C2"></td>
+                <td id="T1C3"></td>
+                <td id="T1C4"></td>
+                <td id="T1C5"></td>
+                <td id="T1C6"></td>
+                <td id="T1C7"></td>
+                <td id="T1C8"></td>
+                <td id="T1C9"></td>
+                <td id="T1C10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">D</td>
+                <td id="T1D1"></td>
+                <td id="T1D2"></td>
+                <td id="T1D3"></td>
+                <td id="T1D4"></td>
+                <td id="T1D5"></td>
+                <td id="T1D6"></td>
+                <td id="T1D7"></td>
+                <td id="T1D8"></td>
+                <td id="T1D9"></td>
+                <td id="T1D10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">E</td>
+                <td id="T1E1"></td>
+                <td id="T1E2"></td>
+                <td id="T1E3"></td>
+                <td id="T1E4"></td>
+                <td id="T1E5"></td>
+                <td id="T1E6"></td>
+                <td id="T1E7"></td>
+                <td id="T1E8"></td>
+                <td id="T1E9"></td>
+                <td id="T1E10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">F</td>
+                <td id="T1F1"></td>
+                <td id="T1F2"></td>
+                <td id="T1F3"></td>
+                <td id="T1F4"></td>
+                <td id="T1F5"></td>
+                <td id="T1F6"></td>
+                <td id="T1F7"></td>
+                <td id="T1F8"></td>
+                <td id="T1F9"></td>
+                <td id="T1F10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">G</td>
+                <td id="T1G1"></td>
+                <td id="T1G2"></td>
+                <td id="T1G3"></td>
+                <td id="T1G4"></td>
+                <td id="T1G5"></td>
+                <td id="T1G6"></td>
+                <td id="T1G7"></td>
+                <td id="T1G8"></td>
+                <td id="T1G9"></td>
+                <td id="T1G10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">H</td>
+                <td id="T1H1"></td>
+                <td id="T1H2"></td>
+                <td id="T1H3"></td>
+                <td id="T1H4"></td>
+                <td id="T1H5"></td>
+                <td id="T1H6"></td>
+                <td id="T1H7"></td>
+                <td id="T1H8"></td>
+                <td id="T1H9"></td>
+                <td id="T1H10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">I</td>
+                <td id="T1I1"></td>
+                <td id="T1I2"></td>
+                <td id="T1I3"></td>
+                <td id="T1I4"></td>
+                <td id="T1I5"></td>
+                <td id="T1I6"></td>
+                <td id="T1I7"></td>
+                <td id="T1I8"></td>
+                <td id="T1I9"></td>
+                <td id="T1I10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">J</td>
+                <td id="T1J1"></td>
+                <td id="T1J2"></td>
+                <td id="T1J3"></td>
+                <td id="T1J4"></td>
+                <td id="T1J5"></td>
+                <td id="T1J6"></td>
+                <td id="T1J7"></td>
+                <td id="T1J8"></td>
+                <td id="T1J9"></td>
+                <td id="T1J10"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+        <div class="col l6 m6">
+
+          <table class="centered">
+            <thead>
+              <th></th>
+              <th id="T2th_0">1</th>
+              <th id="T2th_1">2</th>
+              <th id="T2th_2">3</th>
+              <th id="T2th_3">4</th>
+              <th id="T2th_4">5</th>
+              <th id="T2th_5">6</th>
+              <th id="T2th_6">7</th>
+              <th id="T2th_7">8</th>
+              <th id="T2th_8">9</th>
+              <th id="T2th_9">10</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="noBorder">A</td>
+                <td class="salvoCell" id="T2A1"></td>
+                <td class="salvoCell" id="T2A2"></td>
+                <td class="salvoCell" id="T2A3"></td>
+                <td class="salvoCell" id="T2A4"></td>
+                <td class="salvoCell" id="T2A5"></td>
+                <td class="salvoCell" id="T2A6"></td>
+                <td class="salvoCell" id="T2A7"></td>
+                <td class="salvoCell" id="T2A8"></td>
+                <td class="salvoCell" id="T2A9"></td>
+                <td class="salvoCell" id="T2A10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">B</td>
+                <td class="salvoCell" id="T2B1"></td>
+                <td class="salvoCell" id="T2B2"></td>
+                <td class="salvoCell" id="T2B3"></td>
+                <td class="salvoCell" id="T2B4"></td>
+                <td class="salvoCell" id="T2B5"></td>
+                <td class="salvoCell" id="T2B6"></td>
+                <td class="salvoCell" id="T2B7"></td>
+                <td class="salvoCell" id="T2B8"></td>
+                <td class="salvoCell" id="T2B9"></td>
+                <td class="salvoCell" id="T2B10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">C</td>
+                <td class="salvoCell" id="T2C1"></td>
+                <td class="salvoCell" id="T2C2"></td>
+                <td class="salvoCell" id="T2C3"></td>
+                <td class="salvoCell" id="T2C4"></td>
+                <td class="salvoCell" id="T2C5"></td>
+                <td class="salvoCell" id="T2C6"></td>
+                <td class="salvoCell" id="T2C7"></td>
+                <td class="salvoCell" id="T2C8"></td>
+                <td class="salvoCell" id="T2C9"></td>
+                <td class="salvoCell" id="T2C10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">D</td>
+                <td class="salvoCell" id="T2D1"></td>
+                <td class="salvoCell" id="T2D2"></td>
+                <td class="salvoCell" id="T2D3"></td>
+                <td class="salvoCell" id="T2D4"></td>
+                <td class="salvoCell" id="T2D5"></td>
+                <td class="salvoCell" id="T2D6"></td>
+                <td class="salvoCell" id="T2D7"></td>
+                <td class="salvoCell" id="T2D8"></td>
+                <td class="salvoCell" id="T2D9"></td>
+                <td class="salvoCell" id="T2D10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">E</td>
+                <td class="salvoCell" id="T2E1"></td>
+                <td class="salvoCell" id="T2E2"></td>
+                <td class="salvoCell" id="T2E3"></td>
+                <td class="salvoCell" id="T2E4"></td>
+                <td class="salvoCell" id="T2E5"></td>
+                <td class="salvoCell" id="T2E6"></td>
+                <td class="salvoCell" id="T2E7"></td>
+                <td class="salvoCell" id="T2E8"></td>
+                <td class="salvoCell" id="T2E9"></td>
+                <td class="salvoCell" id="T2E10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">F</td>
+                <td class="salvoCell" id="T2F1"></td>
+                <td class="salvoCell" id="T2F2"></td>
+                <td class="salvoCell" id="T2F3"></td>
+                <td class="salvoCell" id="T2F4"></td>
+                <td class="salvoCell" id="T2F5"></td>
+                <td class="salvoCell" id="T2F6"></td>
+                <td class="salvoCell" id="T2F7"></td>
+                <td class="salvoCell" id="T2F8"></td>
+                <td class="salvoCell" id="T2F9"></td>
+                <td class="salvoCell" id="T2F10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">G</td>
+                <td class="salvoCell" id="T2G1"></td>
+                <td class="salvoCell" id="T2G2"></td>
+                <td class="salvoCell" id="T2G3"></td>
+                <td class="salvoCell" id="T2G4"></td>
+                <td class="salvoCell" id="T2G5"></td>
+                <td class="salvoCell" id="T2G6"></td>
+                <td class="salvoCell" id="T2G7"></td>
+                <td class="salvoCell" id="T2G8"></td>
+                <td class="salvoCell" id="T2G9"></td>
+                <td class="salvoCell" id="T2G10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">H</td>
+                <td class="salvoCell" id="T2H1"></td>
+                <td class="salvoCell" id="T2H2"></td>
+                <td class="salvoCell" id="T2H3"></td>
+                <td class="salvoCell" id="T2H4"></td>
+                <td class="salvoCell" id="T2H5"></td>
+                <td class="salvoCell" id="T2H6"></td>
+                <td class="salvoCell" id="T2H7"></td>
+                <td class="salvoCell" id="T2H8"></td>
+                <td class="salvoCell" id="T2H9"></td>
+                <td class="salvoCell" id="T2H10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">I</td>
+                <td class="salvoCell" id="T2I1"></td>
+                <td class="salvoCell" id="T2I2"></td>
+                <td class="salvoCell" id="T2I3"></td>
+                <td class="salvoCell" id="T2I4"></td>
+                <td class="salvoCell" id="T2I5"></td>
+                <td class="salvoCell" id="T2I6"></td>
+                <td class="salvoCell" id="T2I7"></td>
+                <td class="salvoCell" id="T2I8"></td>
+                <td class="salvoCell" id="T2I9"></td>
+                <td class="salvoCell" id="T2I10"></td>
+              </tr>
+              <tr>
+                <td class="noBorder">J</td>
+                <td class="salvoCell" id="T2J1"></td>
+                <td class="salvoCell" id="T2J2"></td>
+                <td class="salvoCell" id="T2J3"></td>
+                <td class="salvoCell" id="T2J4"></td>
+                <td class="salvoCell" id="T2J5"></td>
+                <td class="salvoCell" id="T2J6"></td>
+                <td class="salvoCell" id="T2J7"></td>
+                <td class="salvoCell" id="T2J8"></td>
+                <td class="salvoCell" id="T2J9"></td>
+                <td class="salvoCell" id="T2J10"></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="input-field center-align ">
+
+            <a id="btnShootSalvo" class="waves-effect waves-light btn" onclick="">SHOOT SALVO</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <div id="gameRecordBlock" class="row">
+
+      <div class="col l6">
+
+        <div id="gameRecordSelf">
+
+          <table id="gameRecordSelfTable" color="red">
+
+            <col class="columnTurn">
+
+            <col class="columnDamages">
+
+            <thead>
+
+              <th class="textCenter">Turn</th>
+
+              <th>Damages on my fleat</th>
+
+            </thead>
+
+            <tbody></tbody>
+
+          </table>
+
+        </div>
+
+      </div>
+
+      <div class="col l6">
+
+        <div id="gameRecordOpponent">
+
+          <table id="gameRecordOppTable">
+
+            <col class="columnTurn">
+
+            <col class="columnDamages">
+
+            <thead>
+
+              <th class="textCenter">Turn</th>
+
+              <th>Damages on Opponent's fleat</th>
+
+            </thead>
+
+            <tbody></tbody>
+
+          </table>
+
+        </div>
+        
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div id="placeShips" style="display: none;">
+
+    <div class="grid-ships col l12">
+
+      <div id="grid" class="grid-stack grid-stack-10">
+
+      </div>
+
+    </div>
+
+    <div class="input-field col l12 center-align ">
+
+      <a id="btnAddShips" class="waves-effect waves-light btn">ADD SHIPS</a>
+
+    </div>
+    <small id="alert-text"></small>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+  <script src="dist/jquery-3.4.1.min.js"></script>
+  <script src="dist/lodash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+  <script src="dist/jquery-ui.min.js"></script>
+  <script src="dist/gridstack.js"></script>
+  <script src="dist/gridstack.jQueryUI.js"></script>
+  <script src="dist/jquery.ui.touch-punch.min.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

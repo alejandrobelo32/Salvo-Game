@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Salvo</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <nav>
+
+    <div class="nav-wrapper blue darken-3">
+
+      <div class="container">
+
+        <a class="brand-logo">Salvo!</a>
+
+      </div>
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+        <div id="frmLogin">
+
+          <li><input id="username" placeholder="User Name " type="email" class="validate enterLogin white-text"></li>
+
+          <li><p>&nbsp;&nbsp;&nbsp;&nbsp;</p></li>
+
+          <li><input id="password" placeholder="Password" type="password" class="validate enterLogin white-text"></li>
+
+          <li><a id="btnLogin" class="waves-effect waves-light btn">LOGIN</a></li>
+
+          <li><a id="btnSignup" class="waves-effect waves-light btn">SIGNUP</a></li>
+
+        </div>
+
+        <li id="player"></li>
+
+        <li><a id="btnLogout" class="waves-effect waves-light btn" style="display: none;">LOGOUT</a></li>
+
+      </ul>
+
+    </div>
+
+    </div>
+
+  </nav>
+
+</head>
+
+<body>
+
+  <div class="container" style="margin-top: 5%; margin-bottom: 5%;">
+
+    <div id="gamesTable">
+
+    </div>
+
+    <table class="centered">
+
+      <thead>
+
+        <th>Creation Date</th>
+        <th>Player 1</th>
+        <th>Player 2</th>
+        <th></th>
+
+      </thead>
+
+      <tbody id="games">
+
+      </tbody>
+
+    </table>
+
+    <div class="row">
+
+      <div class="input-field col m12 l12 center-align">
+
+        <a id="btnCreateGame" class="waves-effect waves-light btn" style="display:none">Create game</a>
+
+      </div>
+
+    </div>
+
+    <h2 class="center-align">Leaderboard</h2>
+
+    <table class="centered">
+
+      <thead>
+
+        <th>Player</th>
+        <th>Total</th>
+        <th>Won</th>
+        <th>Tied</th>
+        <th>Lost</th>
+
+      </thead>
+
+      <tbody id="leaderboard">
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+  <script src="js/games.js"></script>
+
+</body>
+
+</html>
